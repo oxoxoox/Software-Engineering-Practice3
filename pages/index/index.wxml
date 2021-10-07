@@ -3,12 +3,11 @@
   <image class='background' src="../../image/background.jpg"></image>
   <view class="head" >
     <view class="userdata">
-      <image class="head_portrait" src="../../image/人物.png"></image>
-      <text class="username">用户</text>
+      <image class="head_portrait" src="{{userImage}}"></image>
+      <text class="username">{{userName}}</text>
     </view>
     <view class="set">
       <image class="setting1" src="../../image/设置.png"></image>
-      <text class="setting2"> 设置</text>
     </view>
   </view>
 </view>

@@ -9,11 +9,19 @@
 .head{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: aliceblue;
   width: 646rpx; 
   height: 80rpx; 
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
   box-sizing: border-box; 
+  border-radius: 10rpx;
+  border-style:dashed;
+  border-width: 2rpx;
+  border-color:	#708090;
   left: 53rpx;
   top: 20rpx; 
   position: relative
@@ -38,9 +46,6 @@
   align-items: center;
 }
 .head .set .setting1{
-  width: 50rpx;
-  height: 50rpx;
-}
-.head .set .setting2{
-  font-size: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
 }

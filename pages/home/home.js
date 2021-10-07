@@ -1,13 +1,11 @@
-// pages/index/index.js
-var app = getApp()
+// pages/home/home.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    "userName":app.globalData.userName,
-    "userImage":app.globalData.userImage
+
   },
 
   /**
