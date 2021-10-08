@@ -15,7 +15,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    "userName":"用户",
-    "userImage":"/image/人物.png"
+    userName: "未登录",
+    userImage: "/image/人物.png"
   }
 })

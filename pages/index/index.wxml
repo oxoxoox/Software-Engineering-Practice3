@@ -1,7 +1,7 @@
 <!--pages/index/index.wxml-->
 <view class="content">
   <image class='background' src="../../image/background.jpg"></image>
-  <view class="head" >
+  <view bindtap="goHome" class="head" >
     <view class="userdata">
       <image class="head_portrait" src="{{userImage}}"></image>
       <text class="username">{{userName}}</text>
@@ -10,5 +10,19 @@
       <image class="setting1" src="../../image/设置.png"></image>
     </view>
   </view>
+  <view bindtap="openRule" class="rule">
+    <image src="/image/灯笼.png" class="openRule"></image>
+    <text>规则</text>
+  </view>
+  <view class="modalDlg" wx:if="{{showModal}}">
+    <view class="rule1">
+      <image src="/image/rule.png" mode="scaleToFill"></image>
+    </view>
+    <view class="rule2">
+      <image bindtap="go" src="/image/rule1.png" mode="scaleToFill"></image>
+    </view>
+  </view>
+  <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
 </view>
+
 

@@ -1,20 +1,42 @@
 // pages/home/home.js
+var app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    userName:app.globalData.userName,
+    userImage:app.globalData.userImage,
+    canIUseGetUserProfile:false,
+    hasUserInfo: false
   },
-
+ 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    if (wx.getUserProfile) {
+      this.setData({
+        canIUseGetUserProfile: true
+      })
+    }
   },
-
+  getUserProfile:function(){
+    var that =  this;
+    wx.getUserProfile({
+      desc: '用于完善会员资料',
+      success:res => {
+          that.setData({
+            userName: res.userInfo.nickName,
+            userImage: res.userInfo.avatarUrl,
+            hasUserInfo: true
+          })
+          app.globalData.userName= res.userInfo.nickName,
+          app.globalData.userImage= res.userInfo.avatarUrl
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
