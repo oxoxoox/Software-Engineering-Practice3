@@ -61,6 +61,7 @@
 .rule .openRule{
   width: 80rpx;
   height: 80rpx;
+  align-items: flex-end;
 }
 .rule text{
   font-size: 20rpx;
@@ -78,17 +79,31 @@
  }
 
  .modalDlg{
-  width: 480rpx;
+  width: 569rpx;
   height: 820rpx;
   position: fixed;
-  top: 50%;
-  left: 10%;
+  top: 45%;
+  left: 0;
   z-index: 9999;
   margin: -370rpx 85rpx;
-  background-color: #fff;
+  background-color: #EDE19F;
+  border-color: #EDE19F;
+  border-radius: 16rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
+ }
+  .modalDlg image{
+    display: flex;
+    width: 569rpx;
+    border-radius: 16rpx;
+  }
+ .modalDlg .rule1{
+   height: 770rpx;
+ }
+
+ .modalDlg .rule3{
+   height: 50rpx;
  }
 
 
