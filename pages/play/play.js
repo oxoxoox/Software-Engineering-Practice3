@@ -103,6 +103,11 @@ Page({
         msg: "开始",
         diceRecord:wx.getStorageSync('record')
       })
+      wx.showToast({
+        title: '恭喜：'+obj.data.result,
+        icon:"none",
+        duration: 2000
+      })
     }
   },
   /**

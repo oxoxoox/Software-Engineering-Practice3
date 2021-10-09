@@ -27,7 +27,7 @@ Page({
       showModal: true
     })
   },
-  go: function() { 
+  goRule: function() { 
     this.setData({
     showModal: false
     })

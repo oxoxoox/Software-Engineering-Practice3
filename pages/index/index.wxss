@@ -106,6 +106,7 @@
   height: 50rpx;
  }
  .play{
+  border-radius: 16rpx;
   position: fixed;
   top:20%;
   left: 30%;
