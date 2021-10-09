@@ -50,3 +50,59 @@
 .logIn .logIn1{
   color:	#C0C0C0;
 }
+
+.rule{
+  position: relative;
+  top: 100rpx;
+  left: 250rpx;
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+}
+.rule .openRule{
+  width: 180rpx;
+  height: 180rpx;
+  align-items: flex-end;
+}
+.rule text{
+  font-size: 20rpx;
+}
+
+.mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.7;
+ }
+
+ .modalDlg{
+  width: 569rpx;
+  height: 820rpx;
+  position: fixed;
+  top: 45%;
+  left: 0;
+  z-index: 9999;
+  margin: -370rpx 85rpx;
+  background-color: #EDE19F;
+  border-color: #EDE19F;
+  border-radius: 16rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+  .modalDlg image{
+  display: flex;
+  width: 569rpx;
+  border-radius: 16rpx;
+  }
+ .modalDlg .rule1{
+  height: 770rpx;
+ }
+
+ .modalDlg .rule3{
+  height: 50rpx;
+ }

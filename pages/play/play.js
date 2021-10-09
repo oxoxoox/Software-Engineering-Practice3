@@ -1,40 +1,13 @@
-// pages/index/index.js
-var app = getApp()
+// pages/play/play.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    showModal: false,
-    userName: app.globalData.userName,
-    userImage:app.globalData.userImage
-  },
-  //点击事件
-  goHome: function(){
-    wx.switchTab({
-      url: '../home/home',
-    })
-  },
-  playGame: function(){
-      console.log("abc");
-      wx.navigateTo({
-        url: '/pages/play/play'
-      })
-  },
-  openRule: function(){
-    this.setData({
-      showModal: true
-    })
-  },
-  go: function() { 
-    this.setData({
-    showModal: false
-    })
-  },
-  preventTouchMove: function(){
 
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -53,10 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this.setData({
-      userName: app.globalData.userName,
-      userImage:app.globalData.userImage
-    })
+
   },
 
   /**

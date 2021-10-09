@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/play/play"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,18 +12,18 @@
   },
   "tabBar": {
     "color": "#8a8a8a",
-    "selectedColor": "f56238",
+    "selectedColor": "#f56238",
     "borderStyle": "white",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text":"博饼",
+        "text": "博饼",
         "iconPath": "image/中秋博饼.png",
         "selectedIconPath": "image/中秋博饼 (1).png"
       },
       {
-        "pagePath":"pages/home/home",
-        "text":"我的",
+        "pagePath": "pages/home/home",
+        "text": "我的",
         "iconPath": "image/我的.png",
         "selectedIconPath": "image/我的 (1).png"
       }

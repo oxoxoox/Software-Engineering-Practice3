@@ -19,4 +19,17 @@
       </button>
     </block>
   </view>
+  <view bindtap="openRule" class="rule">
+    <image src="/image/lantern2.png" class="openRule"></image>
+    <text>查看规则</text>
+  </view>
+  <view class="modalDlg" wx:if="{{showModal}}">
+    <view>
+      <image src="/image/rule1.png" class="rule1"></image>
+    </view>
+    <view>
+      <image bindtap="go" src="/image/rule3.png"  class="rule3"></image>
+    </view>
+  </view>
+  <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
 </view>

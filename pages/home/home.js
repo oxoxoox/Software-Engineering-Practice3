@@ -6,12 +6,25 @@ Page({
    * 页面的初始数据
    */
   data: {
+    showModal: false,
     userName:app.globalData.userName,
     userImage:app.globalData.userImage,
     canIUseGetUserProfile:false,
     hasUserInfo: false
   },
- 
+  openRule: function(){
+    this.setData({
+      showModal: true
+    })
+  },
+  go: function() { 
+    this.setData({
+    showModal: false
+    })
+  },
+  preventTouchMove: function(){
+
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -62,7 +75,12 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    wx.navigateTo({
+      url: '../index/index'
+    })
+    wx.redirectTo({
+      url: '../index/index'
+    })
   },
 
   /**
