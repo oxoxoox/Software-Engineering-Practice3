@@ -40,13 +40,13 @@ Page({
     wx.getUserProfile({
       desc: '用于完善会员资料',
       success:res => {
-          that.setData({
-            userName: res.userInfo.nickName,
-            userImage: res.userInfo.avatarUrl,
-            hasUserInfo: true
-          })
-          app.globalData.userName= res.userInfo.nickName,
-          app.globalData.userImage= res.userInfo.avatarUrl
+        that.setData({
+          userName: res.userInfo.nickName,
+          userImage: res.userInfo.avatarUrl,
+          hasUserInfo: true
+        })
+        app.globalData.userName= res.userInfo.nickName;
+        app.globalData.userImage= res.userInfo.avatarUrl;
       }
     })
   },

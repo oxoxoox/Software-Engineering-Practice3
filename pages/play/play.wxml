@@ -1,2 +1,7 @@
 <!--pages/play/play.wxml-->
-<text>pages/play/play.wxml</text>
+<view class="content">
+  <image class='background' src="../../image/background3.png"></image>
+  <image class="dice" src='{{diceImage}}'></image>
+  <view class='btn' bindtap='play'>{{msg}}</view>
+  <view wx:for="{{diceRecord}}">{{item}}</view>
+</view>
