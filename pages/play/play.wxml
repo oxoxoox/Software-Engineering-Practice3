@@ -1,7 +1,42 @@
 <!--pages/play/play.wxml-->
 <view class="content">
   <image class='background' src="../../image/background3.png"></image>
-  <image class="dice" src='{{diceImage}}'></image>
-  <view class='btn' bindtap='play'>{{msg}}</view>
-  <view wx:for="{{diceRecord}}">{{item}}</view>
+    <block wx:if="{{flag}}">
+      <view class="itemFirst">
+        <view class="item">
+          <image src="/image/{{dice[0]}}.png"></image>
+        </view>
+        <view class="item">
+          <image src="/image/{{dice[1]}}.png"></image>
+        </view>
+        <view class="item">
+          <image src="/image/{{dice[2]}}.png"></image>
+        </view>
+      </view>
+      <view class="itemSecond">
+        <view class="item">
+          <image src="/image/{{dice[3]}}.png"></image>
+        </view>
+        <view class="item">
+          <image src="/image/{{dice[4]}}.png"></image>
+        </view>
+        <view class="item">
+          <image src="/image/{{dice[5]}}.png"></image>
+        </view>
+      </view>
+    </block>
+  <block wx:else>
+  <view class="dice">
+    <image src='{{diceImage}}'></image>
+  </view>
+  </block>
+  <view class='btn' bindtap='play'>{{msg}}</view>  
+  <view class="recordList">
+    <view class="listFirst"><text>历史记录</text></view>
+    <scroll-view scroll-y="true" style="height: 300rpx">
+      <view wx:for="{{diceRecord}}">
+      <text>{{index+1}}        {{item}}</text>
+     </view>
+     </scroll-view>
+  </view>
 </view>
